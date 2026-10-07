@@ -11,7 +11,7 @@ Dial: ENERGY 3 / RHYTHM 3 / MOTION 2
 - Avenir Next supports clear, human reading. Arial Black gives the hero a decisive silhouette without using decorative monospace.
 - The split hero and asymmetrical content rhythm reflect a career that spans leadership, product engineering, platforms, mobile, games, and AI.
 - Motion reveals relationships as visitors scroll and gives immediate feedback to filters and toggles. It never loops or competes with the content.
-- Cards appear only for distinct projects. Their varied sizing reflects project scope instead of forcing every item into the same visual weight.
+- Cards appear only for distinct projects. The six projects use a two-column desktop grid so the collection scans as a balanced body of work, then reflows to one column on mobile.
 - The supplied CuanHero screenshot is used as product evidence, showing the real responsive interface instead of decorative artwork.
 - The supplied ALUTHRA composite presents two real mobile game screens side by side, making the project's gameplay interface concrete without adding decorative mockups.
 - The supplied Nika-POS composite shows the real dashboard and checkout workflow, giving the retail project a clear operational context.
