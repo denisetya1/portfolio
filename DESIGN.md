@@ -12,5 +12,6 @@ Dial: ENERGY 3 / RHYTHM 3 / MOTION 2
 - The split hero and asymmetrical content rhythm reflect a career that spans leadership, product engineering, platforms, mobile, games, and AI.
 - Motion reveals relationships as visitors scroll and gives immediate feedback to filters and toggles. It never loops or competes with the content.
 - Cards appear only for distinct projects. Their varied sizing reflects project scope instead of forcing every item into the same visual weight.
+- The supplied CuanHero screenshot is used as product evidence, showing the real responsive interface instead of decorative artwork.
 - Spacing alternates between dense evidence and open transitions so each section has a distinct rhythm.
 - The DS mark stays typographic, while the supplied cutout portrait provides the human identity.

@@ -48,6 +48,8 @@ const translations = {
     tiketCaption: 'Pengalaman pencarian dan pemesanan hotel di platform tiket.com.',
     visitTiket: 'Kunjungi tiket.com/hotel',
     projectTiket: 'Sistem inti booking, partner, supplier, dan internal yang melayani jutaan pengguna. Pekerjaan mencakup arsitektur, modernisasi, performa, kualitas kode, dan kepemimpinan delivery.',
+    cuanAlt: 'Platform trading otomatis CuanHero ditampilkan pada desktop dan mobile',
+    cuanCaption: 'Pengalaman produk CuanHero yang responsif pada desktop dan mobile.',
     projectCuan: 'Platform full-stack untuk mengelola akun trading otomatis, pengaturan strategi, operasi VPS, dan pemantauan akun.',
     visitCuan: 'Kunjungi cuanhero.com',
     projectAluthra: 'Game kartu fantasy RPG yang dikembangkan secara independen, mencakup arsitektur game, gameplay, UI, progression, pengelolaan konten, dan integrasi backend.',
