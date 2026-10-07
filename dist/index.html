@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Portfolio of Deni Setyawan, Technical Lead, Full-Stack Engineer, and AI Engineer based in Central Java, Indonesia.">
-  <meta name="theme-color" content="#0b0d0c">
+  <meta name="theme-color" content="#10171b">
   <title>Deni Setyawan | Technical Lead & Engineer</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="styles.css">
@@ -22,22 +22,23 @@
       <span>Menu</span>
     </button>
     <nav id="primary-nav" class="primary-nav" aria-label="Portfolio sections">
-      <a href="#impact" data-i18n="navImpact">Impact</a>
-      <a href="#projects" data-i18n="navProjects">Projects</a>
+      <a href="#impact" data-i18n="navImpact">About</a>
+      <a href="#capabilities" data-i18n="navCapabilities">Expertise</a>
+      <a href="#projects" data-i18n="navProjects">Work</a>
       <a href="#journey" data-i18n="navJourney">Journey</a>
       <a href="#contact" data-i18n="navContact">Contact</a>
     </nav>
     <div class="header-actions">
       <button class="control-button" id="lang-toggle" type="button" aria-label="Switch language to Indonesian">ID</button>
-      <button class="control-button theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme"><span class="theme-label">Light</span></button>
+      <a class="header-cta" href="#contact" data-i18n="headerCta">Let's talk</a>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-copy reveal">
-        <p class="role-line" data-i18n="role">Technical Lead / Full-Stack Engineer / AI Engineer</p>
-        <h1 id="hero-title" data-i18n="heroTitle">I build systems that stay reliable when the stakes get real.</h1>
+        <p class="role-line" data-i18n="heroHello">Hello, I am Deni.</p>
+        <h1 id="hero-title"><span data-i18n="heroLead">Technical Lead</span><span class="hero-and"> &amp; </span><strong data-i18n="heroEngineer">Full-Stack Engineer.</strong></h1>
         <p class="hero-summary" data-i18n="heroSummary">For more than 15 years, I have turned complex product requirements into dependable platforms, practical engineering standards, and teams that ship with confidence.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#projects" data-i18n="seeWork">See selected work</a>
@@ -45,14 +46,13 @@
         </div>
       </div>
 
-      <div class="system-map reveal" aria-label="Interactive map of Deni's engineering focus">
-        <div class="map-rings" aria-hidden="true"></div>
-        <button class="map-node node-center is-active" type="button" data-map-detail="center" aria-pressed="true"><span>DENI</span><small data-i18n="mapOwner">system owner</small></button>
-        <button class="map-node node-lead" type="button" data-map-detail="lead" aria-pressed="false"><span data-i18n="mapLead">Lead</span><small data-i18n="mapTeams">teams</small></button>
-        <button class="map-node node-build" type="button" data-map-detail="build" aria-pressed="false"><span data-i18n="mapBuild">Build</span><small data-i18n="mapProducts">products</small></button>
-        <button class="map-node node-scale" type="button" data-map-detail="scale" aria-pressed="false"><span data-i18n="mapScale">Scale</span><small data-i18n="mapPlatforms">platforms</small></button>
-        <button class="map-node node-ai" type="button" data-map-detail="ai" aria-pressed="false"><span>AI</span><small data-i18n="mapWorkflows">workflows</small></button>
-        <p class="map-detail" id="map-detail" aria-live="polite">Hands-on technical direction from architecture to production.</p>
+      <div class="hero-visual reveal" aria-label="Portrait of Deni Setyawan">
+        <div class="portrait-field" aria-hidden="true"></div>
+        <div class="portrait-orbit" aria-hidden="true"></div>
+        <img class="hero-portrait" src="assets/deni-portrait-transparent.png" alt="Deni Setyawan standing and smiling" data-i18n-alt="portraitAlt" width="1090" height="1443">
+        <div class="portrait-proof proof-years"><strong>15+</strong><span data-i18n="proofYears">years building software</span></div>
+        <div class="portrait-proof proof-team"><strong>8-10</strong><span data-i18n="proofTeam">engineers led</span></div>
+        <div class="portrait-dots" aria-hidden="true"></div>
       </div>
 
       <div class="hero-location">
@@ -62,10 +62,10 @@
     </section>
 
     <section class="impact-section" id="impact" aria-labelledby="impact-title">
-      <div class="section-index reveal" aria-hidden="true">01 / IMPACT</div>
+      <div class="section-index reveal" aria-hidden="true">01 / ABOUT</div>
       <div class="impact-intro reveal">
-        <h2 id="impact-title" data-i18n="impactTitle">Measured work, not vague promises.</h2>
-        <p data-i18n="impactIntro">The strongest outcomes from more than a decade building and scaling tiket.com's hotel ecosystem.</p>
+        <h2 id="impact-title" data-i18n="impactTitle">I stay close to the code, the team, and the outcome.</h2>
+        <p data-i18n="impactIntro">My work spans architecture, hands-on engineering, mentoring, and delivery across products used at scale.</p>
       </div>
       <div class="impact-list">
         <article class="impact-item reveal"><strong>8-10</strong><p data-i18n="impactTeam">frontend and backend engineers led across delivery, architecture, and mentoring</p></article>
@@ -145,7 +145,7 @@
       </div>
     </section>
 
-    <section class="capabilities-section" aria-labelledby="capabilities-title">
+    <section class="capabilities-section" id="capabilities" aria-labelledby="capabilities-title">
       <div class="capabilities-copy reveal">
         <div class="section-index" aria-hidden="true">04 / CAPABILITIES</div>
         <h2 id="capabilities-title" data-i18n="capabilitiesTitle">Wide stack. Clear center of gravity.</h2>

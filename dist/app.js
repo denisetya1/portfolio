@@ -2,21 +2,25 @@ const root = document.documentElement;
 const body = document.body;
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.primary-nav');
-const themeToggle = document.querySelector('#theme-toggle');
-const themeLabel = themeToggle.querySelector('.theme-label');
 const langToggle = document.querySelector('#lang-toggle');
 const filterButtons = [...document.querySelectorAll('.filter-button')];
 const projects = [...document.querySelectorAll('.project')];
 const filterStatus = document.querySelector('#filter-status');
-const mapNodes = [...document.querySelectorAll('.map-node')];
-const mapDetail = document.querySelector('#map-detail');
 
 const translations = {
   id: {
-    navImpact: 'Dampak',
-    navProjects: 'Proyek',
+    navImpact: 'Tentang',
+    navCapabilities: 'Keahlian',
+    navProjects: 'Karya',
     navJourney: 'Perjalanan',
     navContact: 'Kontak',
+    headerCta: 'Mari bicara',
+    heroHello: 'Halo, saya Deni.',
+    heroLead: 'Technical Lead',
+    heroEngineer: 'Full-Stack Engineer.',
+    portraitAlt: 'Deni Setyawan berdiri dan tersenyum',
+    proofYears: 'tahun membangun software',
+    proofTeam: 'engineer yang dipimpin',
     role: 'Technical Lead / Full-Stack Engineer / AI Engineer',
     heroTitle: 'Saya membangun sistem yang tetap andal saat risikonya nyata.',
     heroSummary: 'Selama lebih dari 15 tahun, saya mengubah kebutuhan produk yang rumit menjadi platform andal, standar engineering yang praktis, dan tim yang mampu mengirimkan hasil dengan percaya diri.',
@@ -31,8 +35,8 @@ const translations = {
     mapPlatforms: 'platform',
     mapWorkflows: 'alur kerja',
     years: '15+ tahun di software engineering',
-    impactTitle: 'Hasil terukur, bukan janji samar.',
-    impactIntro: 'Dampak terkuat dari lebih satu dekade membangun dan meningkatkan skala ekosistem hotel tiket.com.',
+    impactTitle: 'Saya tetap dekat dengan kode, tim, dan hasil akhirnya.',
+    impactIntro: 'Pekerjaan saya mencakup arsitektur, engineering langsung, mentoring, dan delivery untuk produk berskala besar.',
     impactTeam: 'engineer frontend dan backend yang dipimpin dalam delivery, arsitektur, dan mentoring',
     impactDefects: 'penurunan defect tahunan setelah penguatan review, testing, dan praktik engineering',
     impactVelocity: 'peningkatan kecepatan pengembangan melalui sistem reusable dan standar yang lebih jelas',
@@ -84,20 +88,6 @@ function setLanguage(nextLanguage) {
 function updateDynamicLabels() {
   const visible = projects.filter((project) => !project.hidden).length;
   filterStatus.textContent = language === 'id' ? `Menampilkan ${visible} proyek.` : `Showing ${visible} project${visible === 1 ? '' : 's'}.`;
-  const selectedMap = document.querySelector('.map-node.is-active')?.dataset.mapDetail || 'center';
-  mapDetail.textContent = mapCopy[language][selectedMap];
-  const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
-  themeLabel.textContent = language === 'id' ? (nextTheme === 'light' ? 'Terang' : 'Gelap') : (nextTheme === 'light' ? 'Light' : 'Dark');
-  themeToggle.setAttribute('aria-label', language === 'id' ? `Ganti ke tema ${nextTheme === 'light' ? 'terang' : 'gelap'}` : `Switch to ${nextTheme} theme`);
-}
-
-function setTheme(theme) {
-  root.dataset.theme = theme;
-  const nextLabel = theme === 'dark' ? 'Light' : 'Dark';
-  themeLabel.textContent = language === 'id' ? (nextLabel === 'Light' ? 'Terang' : 'Gelap') : nextLabel;
-  themeToggle.setAttribute('aria-label', language === 'id' ? `Ganti ke tema ${nextLabel === 'Light' ? 'terang' : 'gelap'}` : `Switch to ${nextLabel.toLowerCase()} theme`);
-  document.querySelector('meta[name="theme-color"]').setAttribute('content', theme === 'dark' ? '#0b0d0c' : '#f2efe7');
-  localStorage.setItem('portfolio-theme', theme);
 }
 
 menuToggle.addEventListener('click', () => {
@@ -113,7 +103,6 @@ nav.addEventListener('click', (event) => {
   }
 });
 
-themeToggle.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
 langToggle.addEventListener('click', () => setLanguage(language === 'en' ? 'id' : 'en'));
 
 filterButtons.forEach((button) => {
@@ -131,34 +120,6 @@ filterButtons.forEach((button) => {
       if (match) visible += 1;
     });
     filterStatus.textContent = language === 'id' ? `Menampilkan ${visible} proyek.` : `Showing ${visible} project${visible === 1 ? '' : 's'}.`;
-  });
-});
-
-const mapCopy = {
-  en: {
-    center: 'Hands-on technical direction from architecture to production.',
-    lead: 'Teams of 8-10 engineers with clear standards and practical mentoring.',
-    build: 'B2C, B2B, supplier, mobile, Web3, and internal products.',
-    scale: 'High-traffic platforms built for millions of users.',
-    ai: 'LLM integration, agents, prompting, and workflow automation.'
-  },
-  id: {
-    center: 'Arah teknis hands-on dari arsitektur hingga production.',
-    lead: 'Tim berisi 8-10 engineer dengan standar jelas dan mentoring praktis.',
-    build: 'Produk B2C, B2B, supplier, mobile, Web3, dan internal.',
-    scale: 'Platform high-traffic yang dibangun untuk jutaan pengguna.',
-    ai: 'Integrasi LLM, agents, prompting, dan otomasi workflow.'
-  }
-};
-
-mapNodes.forEach((node) => {
-  node.addEventListener('click', () => {
-    mapNodes.forEach((item) => {
-      const selected = item === node;
-      item.classList.toggle('is-active', selected);
-      item.setAttribute('aria-pressed', String(selected));
-    });
-    mapDetail.textContent = mapCopy[language][node.dataset.mapDetail];
   });
 });
 
@@ -182,9 +143,6 @@ const sectionObserver = new IntersectionObserver((entries) => {
   });
 }, { rootMargin: '-35% 0px -55% 0px' });
 document.querySelectorAll('main section[id]').forEach((section) => sectionObserver.observe(section));
-
-const preferredTheme = localStorage.getItem('portfolio-theme');
-if (preferredTheme === 'light' || preferredTheme === 'dark') setTheme(preferredTheme);
 
 body.addEventListener('keydown', (event) => {
   if (event.key === 'Escape' && nav.classList.contains('is-open')) {
