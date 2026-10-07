@@ -56,7 +56,7 @@ main>section,.site-footer { width: min(100%,var(--max)); margin-inline: auto; pa
 .portrait-orbit::before,.portrait-orbit::after { position: absolute; border: 1px solid rgba(11,17,20,.25); content: ""; transform: rotate(30deg); }
 .portrait-orbit::before { inset: 12%; }
 .portrait-orbit::after { inset: 30%; }
-.hero-portrait { position: absolute; z-index: 2; left: 50%; bottom: 0; width: min(100%,34rem); height: calc(100% - 1rem); object-fit: contain; object-position: center bottom; transform: translateX(-48%); filter: drop-shadow(0 1.5rem 1.5rem rgba(0,0,0,.2)); }
+.hero-portrait { position: absolute; z-index: 2; left: 50%; bottom: -14%; width: auto; max-width: none; height: 112%; object-fit: contain; object-position: center bottom; transform: translateX(-48%); filter: drop-shadow(0 1.5rem 1.5rem rgba(0,0,0,.2)); }
 .portrait-proof { position: absolute; z-index: 4; display: grid; min-width: 9.5rem; padding: 1rem 1.15rem; border-left: 3px solid var(--accent); background: var(--bg-deep); box-shadow: 0 1rem 2.5rem rgba(0,0,0,.24); }
 .portrait-proof strong { color: var(--accent); font-size: 1.9rem; line-height: 1; }
 .portrait-proof span { max-width: 12ch; margin-top: .4rem; color: var(--muted); font-size: .75rem; line-height: 1.3; }
@@ -150,7 +150,7 @@ main>section,.site-footer { width: min(100%,var(--max)); margin-inline: auto; pa
   .hero-copy { padding-bottom: 3.5rem; }
   .hero-visual { min-height: min(44rem,120vw); }
   .portrait-field { inset: 0 calc(-1 * var(--gutter)); }
-  .hero-portrait { height: calc(100% - .5rem); width: min(92%,32rem); }
+  .hero-portrait { bottom: -10%; width: auto; max-width: none; height: 108%; }
   .proof-years { left: 0; top: 22%; }
   .proof-team { right: 0; bottom: 13%; }
   .hero-location { flex-direction: column; padding: 1.1rem 0; color: #10231b; border-top-color: rgba(11,17,20,.22); }

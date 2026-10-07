@@ -18,7 +18,7 @@ const translations = {
     heroHello: 'Halo, saya Deni.',
     heroLead: 'Technical Lead',
     heroEngineer: 'Full-Stack Engineer.',
-    portraitAlt: 'Deni Setyawan berdiri dan tersenyum',
+    portraitAlt: 'Deni Setyawan tersenyum dengan tangan terlipat',
     proofYears: 'tahun membangun software',
     proofTeam: 'engineer yang dipimpin',
     role: 'Technical Lead / Full-Stack Engineer / AI Engineer',

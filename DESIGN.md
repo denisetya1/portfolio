@@ -6,7 +6,7 @@ Dial: ENERGY 3 / RHYTHM 3 / MOTION 2
 
 ## Identity
 
-- The hero portrait is the main visual anchor. Architectural rings, grids, and measured stat blocks connect Deni's leadership story to systems thinking.
+- The hero portrait is framed from the waist up, following the supplied reference so Deni's face and confident folded-arm pose carry the visual focus. Architectural rings and measured stat blocks connect the portrait to systems thinking.
 - Charcoal and vivid green follow the user's explicit visual direction. White and muted sage keep dense career evidence readable.
 - Avenir Next supports clear, human reading. Arial Black gives the hero a decisive silhouette without using decorative monospace.
 - The split hero and asymmetrical content rhythm reflect a career that spans leadership, product engineering, platforms, mobile, games, and AI.
