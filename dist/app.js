@@ -52,6 +52,8 @@ const translations = {
     cuanCaption: 'Pengalaman produk CuanHero yang responsif pada desktop dan mobile.',
     projectCuan: 'Platform full-stack untuk mengelola akun trading otomatis, pengaturan strategi, operasi VPS, dan pemantauan akun.',
     visitCuan: 'Kunjungi cuanhero.com',
+    aluthraAlt: 'Layar beranda dan toko game kartu fantasy RPG ALUTHRA pada perangkat mobile',
+    aluthraCaption: 'Antarmuka beranda dan toko ALUTHRA untuk pengalaman fantasy RPG di perangkat mobile.',
     projectAluthra: 'Game kartu fantasy RPG yang dikembangkan secara independen, mencakup arsitektur game, gameplay, UI, progression, pengelolaan konten, dan integrasi backend.',
     projectNika: 'Aplikasi point-of-sale mobile untuk operasi retail harian, termasuk transaksi penjualan dan pencetakan struk melalui Bluetooth.',
     journeyTitle: 'Karier yang dibangun dengan tetap dekat pada pekerjaan teknis.',

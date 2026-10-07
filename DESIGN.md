@@ -13,5 +13,6 @@ Dial: ENERGY 3 / RHYTHM 3 / MOTION 2
 - Motion reveals relationships as visitors scroll and gives immediate feedback to filters and toggles. It never loops or competes with the content.
 - Cards appear only for distinct projects. Their varied sizing reflects project scope instead of forcing every item into the same visual weight.
 - The supplied CuanHero screenshot is used as product evidence, showing the real responsive interface instead of decorative artwork.
+- The supplied ALUTHRA composite presents two real mobile game screens side by side, making the project's gameplay interface concrete without adding decorative mockups.
 - Spacing alternates between dense evidence and open transitions so each section has a distinct rhythm.
 - The DS mark stays typographic, while the supplied cutout portrait provides the human identity.
