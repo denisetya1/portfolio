@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Deni Setyawan, Technical Lead, Full-Stack Engineer, and AI Engineer based in Central Java, Indonesia.">
+  <meta name="theme-color" content="#0b0d0c">
+  <title>Deni Setyawan | Technical Lead & Engineer</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" aria-label="Primary navigation">
+    <a class="wordmark" href="#top" aria-label="Deni Setyawan, back to top">
+      <span class="wordmark-mark" aria-hidden="true">DS</span>
+      <span class="wordmark-name">Deni Setyawan</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span>Menu</span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Portfolio sections">
+      <a href="#impact" data-i18n="navImpact">Impact</a>
+      <a href="#projects" data-i18n="navProjects">Projects</a>
+      <a href="#journey" data-i18n="navJourney">Journey</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="control-button" id="lang-toggle" type="button" aria-label="Switch language to Indonesian">ID</button>
+      <button class="control-button theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme"><span class="theme-label">Light</span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="role-line" data-i18n="role">Technical Lead / Full-Stack Engineer / AI Engineer</p>
+        <h1 id="hero-title" data-i18n="heroTitle">I build systems that stay reliable when the stakes get real.</h1>
+        <p class="hero-summary" data-i18n="heroSummary">For more than 15 years, I have turned complex product requirements into dependable platforms, practical engineering standards, and teams that ship with confidence.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects" data-i18n="seeWork">See selected work</a>
+          <a class="text-link" href="mailto:deni.setyawan@gmail.com" data-i18n="startConversation">Start a conversation</a>
+        </div>
+      </div>
+
+      <div class="system-map reveal" aria-label="Interactive map of Deni's engineering focus">
+        <div class="map-rings" aria-hidden="true"></div>
+        <button class="map-node node-center is-active" type="button" data-map-detail="center" aria-pressed="true"><span>DENI</span><small data-i18n="mapOwner">system owner</small></button>
+        <button class="map-node node-lead" type="button" data-map-detail="lead" aria-pressed="false"><span data-i18n="mapLead">Lead</span><small data-i18n="mapTeams">teams</small></button>
+        <button class="map-node node-build" type="button" data-map-detail="build" aria-pressed="false"><span data-i18n="mapBuild">Build</span><small data-i18n="mapProducts">products</small></button>
+        <button class="map-node node-scale" type="button" data-map-detail="scale" aria-pressed="false"><span data-i18n="mapScale">Scale</span><small data-i18n="mapPlatforms">platforms</small></button>
+        <button class="map-node node-ai" type="button" data-map-detail="ai" aria-pressed="false"><span>AI</span><small data-i18n="mapWorkflows">workflows</small></button>
+        <p class="map-detail" id="map-detail" aria-live="polite">Hands-on technical direction from architecture to production.</p>
+      </div>
+
+      <div class="hero-location">
+        <span>Central Java, Indonesia</span>
+        <span data-i18n="years">15+ years in software engineering</span>
+      </div>
+    </section>
+
+    <section class="impact-section" id="impact" aria-labelledby="impact-title">
+      <div class="section-index reveal" aria-hidden="true">01 / IMPACT</div>
+      <div class="impact-intro reveal">
+        <h2 id="impact-title" data-i18n="impactTitle">Measured work, not vague promises.</h2>
+        <p data-i18n="impactIntro">The strongest outcomes from more than a decade building and scaling tiket.com's hotel ecosystem.</p>
+      </div>
+      <div class="impact-list">
+        <article class="impact-item reveal"><strong>8-10</strong><p data-i18n="impactTeam">frontend and backend engineers led across delivery, architecture, and mentoring</p></article>
+        <article class="impact-item reveal"><strong>~70%</strong><p data-i18n="impactDefects">fewer defects year over year after stronger review, testing, and engineering practices</p></article>
+        <article class="impact-item reveal"><strong>~50%</strong><p data-i18n="impactVelocity">improvement in development velocity through reusable systems and clearer standards</p></article>
+        <article class="impact-item reveal"><strong>2014-25</strong><p data-i18n="impactTiket">building the B2C, B2B, supplier, and internal hotel platforms at tiket.com</p></article>
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="projects-heading reveal">
+        <div class="section-index" aria-hidden="true">02 / SELECTED SYSTEMS</div>
+        <h2 id="projects-title" data-i18n="projectsTitle">Products shaped across different kinds of complexity.</h2>
+      </div>
+      <div class="project-filters reveal" role="group" aria-label="Filter projects">
+        <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true" data-i18n="filterAll">All</button>
+        <button type="button" class="filter-button" data-filter="platform" aria-pressed="false" data-i18n="filterPlatforms">Platforms</button>
+        <button type="button" class="filter-button" data-filter="mobile" aria-pressed="false">Mobile</button>
+        <button type="button" class="filter-button" data-filter="game" aria-pressed="false">Game</button>
+      </div>
+      <div class="project-grid" id="project-grid">
+        <article class="project project-featured reveal" data-category="platform">
+          <div class="project-meta"><span>01</span><span>Platform / Travel</span></div>
+          <div><h3>tiket.com Hotel Ecosystem</h3><p data-i18n="projectTiket">Core booking, partner, supplier, and internal systems serving millions of users. Work included architecture, modernization, performance, code quality, and delivery leadership.</p></div>
+          <ul class="tech-list" aria-label="Technologies"><li>React</li><li>Next.js</li><li>Node.js</li><li>Java</li><li>Go</li></ul>
+        </article>
+        <article class="project reveal" data-category="platform">
+          <div class="project-meta"><span>02</span><span>Platform / Trading</span></div>
+          <h3>CuanHero</h3>
+          <p data-i18n="projectCuan">A full-stack platform for managing automated trading accounts, strategy settings, VPS operations, and account monitoring.</p>
+          <ul class="tech-list" aria-label="Technologies"><li>Next.js</li><li>Node.js</li><li>VPS Infrastructure</li></ul>
+          <a class="project-link" href="https://cuanhero.com" target="_blank" rel="noreferrer" data-i18n="visitCuan">Visit cuanhero.com</a>
+        </article>
+        <article class="project reveal" data-category="game">
+          <div class="project-meta"><span>03</span><span>Independent / Game</span></div>
+          <h3>ALUTHRA</h3>
+          <p data-i18n="projectAluthra">An independently developed fantasy RPG card game covering game architecture, gameplay systems, UI, progression, content management, and backend integration.</p>
+          <ul class="tech-list" aria-label="Technologies"><li>Godot 4</li><li>Game Systems</li><li>Backend Integration</li></ul>
+        </article>
+        <article class="project project-wide reveal" data-category="mobile">
+          <div class="project-meta"><span>04</span><span>Mobile / Retail</span></div>
+          <div><h3>Nika-POS</h3><p data-i18n="projectNika">A mobile point-of-sale application for daily retail operations, including sales transactions and Bluetooth receipt printing.</p></div>
+          <ul class="tech-list" aria-label="Technologies"><li>React Native</li><li>Bluetooth</li><li>ESC-POS</li></ul>
+        </article>
+      </div>
+      <p class="filter-status" id="filter-status" aria-live="polite">Showing 4 projects.</p>
+    </section>
+
+    <section class="journey-section" id="journey" aria-labelledby="journey-title">
+      <div class="journey-sticky reveal">
+        <div class="section-index" aria-hidden="true">03 / JOURNEY</div>
+        <h2 id="journey-title" data-i18n="journeyTitle">A career built by staying close to the work.</h2>
+        <p data-i18n="journeyIntro">Leadership did not replace engineering. It widened the responsibility around it.</p>
+      </div>
+      <div class="timeline">
+        <details class="timeline-item reveal" open>
+          <summary><span class="timeline-date">2014-2025</span><span>Technical Lead, tiket.com</span><span class="summary-action" data-i18n="details">Details</span></summary>
+          <div class="timeline-content"><p data-i18n="timelineTiket">Led frontend and backend engineers across the hotel ecosystem. Defined technical direction, modernized legacy applications, improved engineering quality, and partnered across Product, Design, QA, Backend, and business teams.</p></div>
+        </details>
+        <details class="timeline-item reveal">
+          <summary><span class="timeline-date">2022</span><span>Freelance Full-Stack Developer, XYZ GOAT Japan</span><span class="summary-action" data-i18n="details">Details</span></summary>
+          <div class="timeline-content"><p data-i18n="timelineGoat">Built a Web3 NFT platform with wallet connectivity, metadata, blockchain transactions, and frontend-to-backend integrations.</p></div>
+        </details>
+        <details class="timeline-item reveal">
+          <summary><span class="timeline-date">2014-2015</span><span>Senior Web Developer, Outpost Interactive</span><span class="summary-action" data-i18n="details">Details</span></summary>
+          <div class="timeline-content"><p data-i18n="timelineOutpost">Led a small team delivering responsive web applications and coordinating technical implementation for multiple clients.</p></div>
+        </details>
+        <details class="timeline-item reveal">
+          <summary><span class="timeline-date">2011-2014</span><span>Web Engineer, TMG, Creativindo, Gravigra</span><span class="summary-action" data-i18n="details">Details</span></summary>
+          <div class="timeline-content"><p data-i18n="timelineEarly">Built browser games, web applications, and client websites while working across gameplay, frontend, backend, databases, performance, and support.</p></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="capabilities-section" aria-labelledby="capabilities-title">
+      <div class="capabilities-copy reveal">
+        <div class="section-index" aria-hidden="true">04 / CAPABILITIES</div>
+        <h2 id="capabilities-title" data-i18n="capabilitiesTitle">Wide stack. Clear center of gravity.</h2>
+        <p data-i18n="capabilitiesIntro">The tools change. The work stays focused on architecture, reliable delivery, product outcomes, and engineering growth.</p>
+      </div>
+      <div class="capability-groups reveal">
+        <div><h3>Frontend</h3><p>React, Next.js, React Native, Redux, Zustand, HTML, CSS</p></div>
+        <div><h3>Backend</h3><p>Node.js, NestJS, Java, Go, Python, PHP, REST, GraphQL</p></div>
+        <div><h3>Data & Quality</h3><p>PostgreSQL, MySQL, MongoDB, Jest, React Testing Library, Code Review</p></div>
+        <div><h3>AI & Delivery</h3><p>LLM Integration, AI Agents, Prompt Engineering, Workflow Automation</p></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <p class="contact-kicker reveal" data-i18n="contactKicker">Have a complex system, a growing team, or a product that needs stronger technical direction?</p>
+      <h2 id="contact-title" class="reveal" data-i18n="contactTitle">Let's talk about the real engineering problem.</h2>
+      <div class="contact-actions reveal">
+        <a class="button button-primary" href="mailto:deni.setyawan@gmail.com">deni.setyawan@gmail.com</a>
+        <a class="social-link" href="https://www.linkedin.com/in/denisetya" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="social-link" href="https://github.com/denisetya1" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Deni Setyawan</p>
+    <p>Technical Lead / Full-Stack Engineer / AI Engineer</p>
+    <a href="#top" data-i18n="backTop">Back to top</a>
+  </footer>
+</body>
+</html>
