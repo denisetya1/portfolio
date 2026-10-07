@@ -17,5 +17,6 @@ Dial: ENERGY 3 / RHYTHM 3 / MOTION 2
 - The supplied Nika-POS composite shows the real dashboard and checkout workflow, giving the retail project a clear operational context.
 - The three tiket.com products use separate cards because each has its own audience, technology, supplied screenshot, and live destination.
 - Spacing alternates between dense evidence and open transitions so each section has a distinct rhythm.
-- The About section pairs a concise professional summary with the supplied blazer portrait. Removing the metric strip keeps the section personal and gives the image a clear supporting role beside the story.
+- The About section places the supplied blazer portrait on the left and a concise professional summary on the right. On mobile, the summary stays first and the portrait moves below it for a natural reading order.
+- The About portrait enters from the left while its summary enters from the right when the section reaches the viewport. The short convergence motion introduces the relationship between person and story without looping or competing with the content.
 - The DS mark stays typographic, while the supplied cutout portrait provides the human identity.
