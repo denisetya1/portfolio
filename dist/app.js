@@ -55,6 +55,8 @@ const translations = {
     aluthraAlt: 'Layar beranda dan toko game kartu fantasy RPG ALUTHRA pada perangkat mobile',
     aluthraCaption: 'Antarmuka beranda dan toko ALUTHRA untuk pengalaman fantasy RPG di perangkat mobile.',
     projectAluthra: 'Game kartu fantasy RPG yang dikembangkan secara independen, mencakup arsitektur game, gameplay, UI, progression, pengelolaan konten, dan integrasi backend.',
+    nikaAlt: 'Dashboard dan antarmuka point-of-sale Nika-POS ditampilkan pada desktop dan tablet',
+    nikaCaption: 'Dashboard dan alur penjualan Nika-POS pada desktop dan tablet.',
     projectNika: 'Aplikasi point-of-sale mobile untuk operasi retail harian, termasuk transaksi penjualan dan pencetakan struk melalui Bluetooth.',
     journeyTitle: 'Karier yang dibangun dengan tetap dekat pada pekerjaan teknis.',
     journeyIntro: 'Peran leadership tidak menggantikan engineering. Peran itu memperluas tanggung jawab di sekitarnya.',

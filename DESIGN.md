@@ -14,5 +14,6 @@ Dial: ENERGY 3 / RHYTHM 3 / MOTION 2
 - Cards appear only for distinct projects. Their varied sizing reflects project scope instead of forcing every item into the same visual weight.
 - The supplied CuanHero screenshot is used as product evidence, showing the real responsive interface instead of decorative artwork.
 - The supplied ALUTHRA composite presents two real mobile game screens side by side, making the project's gameplay interface concrete without adding decorative mockups.
+- The supplied Nika-POS composite shows the real dashboard and checkout workflow, giving the retail project a clear operational context.
 - Spacing alternates between dense evidence and open transitions so each section has a distinct rhythm.
 - The DS mark stays typographic, while the supplied cutout portrait provides the human identity.
