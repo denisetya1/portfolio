@@ -40,6 +40,9 @@ const translations = {
     projectsTitle: 'Produk yang dibentuk dari berbagai jenis kompleksitas.',
     filterAll: 'Semua',
     filterPlatforms: 'Platform',
+    tiketAlt: 'Tampilan desktop platform pencarian dan pemesanan hotel tiket.com',
+    tiketCaption: 'Pengalaman pencarian dan pemesanan hotel di platform tiket.com.',
+    visitTiket: 'Kunjungi tiket.com/hotel',
     projectTiket: 'Sistem inti booking, partner, supplier, dan internal yang melayani jutaan pengguna. Pekerjaan mencakup arsitektur, modernisasi, performa, kualitas kode, dan kepemimpinan delivery.',
     projectCuan: 'Platform full-stack untuk mengelola akun trading otomatis, pengaturan strategi, operasi VPS, dan pemantauan akun.',
     visitCuan: 'Kunjungi cuanhero.com',
@@ -61,12 +64,16 @@ const translations = {
 };
 
 const english = Object.fromEntries([...document.querySelectorAll('[data-i18n]')].map((node) => [node.dataset.i18n, node.textContent]));
+const englishAlt = Object.fromEntries([...document.querySelectorAll('[data-i18n-alt]')].map((node) => [node.dataset.i18nAlt, node.getAttribute('alt')]));
 let language = 'en';
 
 function setLanguage(nextLanguage) {
   language = nextLanguage;
   document.querySelectorAll('[data-i18n]').forEach((node) => {
     node.textContent = language === 'id' ? translations.id[node.dataset.i18n] : english[node.dataset.i18n];
+  });
+  document.querySelectorAll('[data-i18n-alt]').forEach((node) => {
+    node.setAttribute('alt', language === 'id' ? translations.id[node.dataset.i18nAlt] : englishAlt[node.dataset.i18nAlt]);
   });
   root.lang = language;
   langToggle.textContent = language === 'en' ? 'ID' : 'EN';
